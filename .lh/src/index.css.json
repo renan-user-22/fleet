@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1727721749893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727721788528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n-  overflow-y:hidden;\n+  overflow-y:scroll;\n \n \n   &::-webkit-scrollbar {\n     width: 6px;\n"
+                },
+                {
+                    "date": 1727721810846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n   overflow-y:scroll;\n \n-\n   &::-webkit-scrollbar {\n     width: 6px;\n     height: 6px;\n   };\n"
+                }
+            ],
+            "date": 1727721749893,
+            "name": "Commit-0",
+            "content": "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  overflow-y:hidden;\n\n\n  &::-webkit-scrollbar {\n    width: 6px;\n    height: 6px;\n  };\n  &::-webkit-scrollbar-thumb {\n    background-color: #FF4500;\n  };\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n"
+        }
+    ]
+}
