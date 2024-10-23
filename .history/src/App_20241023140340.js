@@ -209,7 +209,7 @@ const App = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             >
-              <FaBars size={35} style={{ color: '#f26b2b' }} />
+              <FaBars size={35} style={{ color: '#FF4500' }} />
             </motion.div>
 
             <Drawer
@@ -217,7 +217,7 @@ const App = () => {
               open={drawerOpen}
               onClose={toggleDrawer}
               PaperProps={{
-                style: { width: '50%', padding: '10px', backgroundColor: '#f26b2b' },
+                style: { width: '50%', padding: '10px', backgroundColor: '#FF4500' },
               }}
             >
               <Box
@@ -431,7 +431,7 @@ const App = () => {
         <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
 
           {areaDesktop &&
-            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
+            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'}>
               <LogoImg src={ImgFrotas} width={'100%'} />
             </Box>
           }
@@ -462,15 +462,15 @@ const App = () => {
       </Box>
 
       <FleetSection id="services">
-        <Box direction={areaDesktop ? 'row' : 'column'} justify={'flex-start'} align={'center'} width={'95%'}>
+        <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'} width={'95%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
+          <Box flex={'none'} width={areaDesktop ? '50%' : '100%'} direction={'column'} justify={'flex-start'} align={'center'}>
+            <LogoImg src={Ns} width={'100%'} />
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
+          <Box flex={'none'} width={areaDesktop ? '50%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
 
             <SubmitButtonTwo>
               Multas de trânsito em geral

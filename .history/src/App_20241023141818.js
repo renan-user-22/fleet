@@ -462,15 +462,15 @@ const App = () => {
       </Box>
 
       <FleetSection id="services">
-        <Box direction={areaDesktop ? 'row' : 'column'} justify={'flex-start'} align={'center'} width={'95%'}>
+        <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'} width={'95%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
+          <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={'column'} justify={'flex-start'} align={'flex-start'}>
+            <LogoImg src={Ns} width={'75%'} />
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
+          <Box flex={'none'} width={areaDesktop ? '50%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
 
             <SubmitButtonTwo>
               Multas de trânsito em geral

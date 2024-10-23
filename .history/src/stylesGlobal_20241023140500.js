@@ -311,8 +311,8 @@ export const SubmitButton = styled.button`
 `;
 
 export const SubmitButtonTwo = styled.button`
+  padding: 20px 20px;
   width:100%;
-  height: 90px;
   border: none;
   border-radius: 5px;
   background-color: #888888;
@@ -372,8 +372,8 @@ display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  //background-image: url(${backgroundImageBlack});
-  //background-size: cover;
+  background-image: url(${backgroundImageBlack});
+  background-size: cover;
   text-align: center;
   min-height: 600px;
   padding: 50px 0;

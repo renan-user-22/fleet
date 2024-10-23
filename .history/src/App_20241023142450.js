@@ -466,7 +466,7 @@ const App = () => {
 
 
           <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
+            <LogoImg src={Ns} width={areaDesktop ? '90%' : '100%'} />
           </Box>
 
 

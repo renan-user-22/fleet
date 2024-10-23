@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 404,
+            "activePatchIndex": 412,
             "patches": [
                 {
                     "date": 1727460100250,
@@ -1624,6 +1624,38 @@
                 {
                     "date": 1729695403403,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,33 +26,43 @@\n   }\r\n `;\r\n \r\n export const Container = styled.div`\r\n-  display: flex;\r\n+  //display: flex;\r\n   flex-direction: column;\r\n   align-items: center;\r\n   overflow-x: hidden;\r\n-  position: relative; /* Define posição relativa para manter os filhos em ordem */\r\n-  z-index: 1; /* O conteúdo deve estar acima da imagem de fundo */\r\n+  //z-index: -;\r\n+  //width: 100%;\r\n `;\r\n-\r\n export const BackgroundImage = styled.div`\r\n   background-image: url(${backgroundImage});\r\n   background-size: cover;\r\n   background-attachment: fixed; /* Imagem fixa durante o scroll */\r\n   background-position: center;\r\n   height: ${(props) => props.height || '110vh'};\r\n   width: 100%;\r\n+  overflow: hidden;\r\n   position: relative;\r\n+  z-index: -1; /* Para garantir que fique atrás do conteúdo */\r\n   \r\n   /* Aplicando a animação de zoom */\r\n   animation: ${zoomEffect} 15s infinite ease-in-out;\r\n   will-change: transform; /* Para otimizar a performance */\r\n-  \r\n-  /* Remove o z-index: -1 */\r\n-  /* Não é necessário ::before se o background-attachment: fixed já fixa a imagem */\r\n+\r\n+  /* Garante que o conteúdo acima e abaixo role enquanto a imagem permanece fixa */\r\n+  &::before {\r\n+    content: '';\r\n+    display: block;\r\n+    position: absolute;\r\n+    top: 0;\r\n+    left: 0;\r\n+    right: 0;\r\n+    bottom: 0;\r\n+    background: inherit; /* Mantém o background da imagem */\r\n+    z-index: -1;\r\n+  }\r\n `;\r\n-\r\n // Header\r\n export const HeaderWrapper = styled.header`\r\n   background-color: ${(props) => (props.scrolled ? \"rgba(0, 0, 0, 0.8)\" : \"transparent\")};\r\n   padding: 10px;\r\n"
+                },
+                {
+                    "date": 1729698275790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,10 +45,10 @@\n   position: relative;\r\n   z-index: -1; /* Para garantir que fique atrás do conteúdo */\r\n   \r\n   /* Aplicando a animação de zoom */\r\n-  animation: ${zoomEffect} 15s infinite ease-in-out;\r\n-  will-change: transform; /* Para otimizar a performance */\r\n+  //animation: ${zoomEffect} 15s infinite ease-in-out;\r\n+  //will-change: transform; /* Para otimizar a performance */\r\n \r\n   /* Garante que o conteúdo acima e abaixo role enquanto a imagem permanece fixa */\r\n   &::before {\r\n     content: '';\r\n"
+                },
+                {
+                    "date": 1729703068677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import styled, { keyframes } from \"styled-components\";\r\n import backgroundImage from './img/ImageInitialllll.jpg';\r\n import backgroundImageWhite from './img/ImageInitiall.jpg';\r\n import backgroundImageBlack from './img/ImageInitiallll.jpg';\r\n-import backgroundImageStop from './img/ImageInitialll.jpg';\r\n \r\n // Animação de Zoom contínuo no fundo\r\n const zoomEffect = keyframes`\r\n   0% {\r\n"
+                },
+                {
+                    "date": 1729703100839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,17 +122,17 @@\n     font-weight: bold;\r\n     position: relative;\r\n \r\n     &:hover {\r\n-      color: #FF4500;\r\n+      color: #f26b2b;\r\n       transition: color 0.3s ease;\r\n     }\r\n \r\n     &:hover::after {\r\n       content: '';\r\n       width: 100%;\r\n       height: 2px;\r\n-      background-color: #FF4500;\r\n+      background-color: #f26b2b;\r\n       position: absolute;\r\n       bottom: -5px;\r\n       left: 0;\r\n       animation: ${fadeIn} 0.3s ease;\r\n@@ -252,9 +252,9 @@\n   flex-direction: column;\r\n   align-items: center;\r\n \r\n   button {\r\n-    background-color: #f53629;\r\n+    background-color: #f26b2b;\r\n     width: 230px;\r\n     color: white;\r\n     padding: 10px 20px;\r\n     font-size: 1rem;\r\n@@ -295,9 +295,9 @@\n export const SubmitButton = styled.button`\r\n   padding: 10px 20px;\r\n   border: none;\r\n   border-radius: 5px;\r\n-  background-color: #f53629;\r\n+  background-color: #f26b2b;\r\n   color: #fff;\r\n   margin-left: 20px;\r\n   margin-right: 30px;\r\n   margin-bottom: 30px;\r\n@@ -322,9 +322,9 @@\n   transition: transform 0.5s ease;\r\n   cursor: pointer;\r\n \r\n   &:hover {\r\n-      background-color: #d72f23;\r\n+      background-color: #f26b2b;\r\n       transform: translateY(-7px);\r\n     }\r\n `;\r\n \r\n@@ -358,9 +358,9 @@\n       color: #FFF;\r\n       transition: color 0.3s;\r\n \r\n       &:hover {\r\n-        color: #ffcc00;\r\n+        color: #f26b2b;\r\n       }\r\n     }\r\n   }\r\n `;\r\n"
+                },
+                {
+                    "date": 1729703197001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -371,10 +371,10 @@\n   flex-direction: column;\r\n   justify-content: center;\r\n   align-items: center;\r\n   height: auto;\r\n-  background-image: url(${backgroundImageBlack});\r\n-  background-size: cover;\r\n+  //background-image: url(${backgroundImageBlack});\r\n+  //background-size: cover;\r\n   text-align: center;\r\n   min-height: 600px;\r\n   padding: 50px 0;\r\n \r\n"
+                },
+                {
+                    "date": 1729704104060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -312,8 +312,9 @@\n \r\n export const SubmitButtonTwo = styled.button`\r\n   padding: 20px 20px;\r\n   width:100%;\r\n+  height: 100px;\r\n   border: none;\r\n   border-radius: 5px;\r\n   background-color: #888888;\r\n   color: #fff;\r\n"
+                },
+                {
+                    "date": 1729704112286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -312,9 +312,9 @@\n \r\n export const SubmitButtonTwo = styled.button`\r\n   padding: 20px 20px;\r\n   width:100%;\r\n-  height: 100px;\r\n+  height: 70px;\r\n   border: none;\r\n   border-radius: 5px;\r\n   background-color: #888888;\r\n   color: #fff;\r\n"
+                },
+                {
+                    "date": 1729704120752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -312,9 +312,9 @@\n \r\n export const SubmitButtonTwo = styled.button`\r\n   padding: 20px 20px;\r\n   width:100%;\r\n-  height: 70px;\r\n+  height: 90px;\r\n   border: none;\r\n   border-radius: 5px;\r\n   background-color: #888888;\r\n   color: #fff;\r\n"
+                },
+                {
+                    "date": 1729704137294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -310,9 +310,8 @@\n     }\r\n `;\r\n \r\n export const SubmitButtonTwo = styled.button`\r\n-  padding: 20px 20px;\r\n   width:100%;\r\n   height: 90px;\r\n   border: none;\r\n   border-radius: 5px;\r\n"
                 }
             ],
             "date": 1727460100250,

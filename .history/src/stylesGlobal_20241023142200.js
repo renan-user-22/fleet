@@ -311,6 +311,7 @@ export const SubmitButton = styled.button`
 `;
 
 export const SubmitButtonTwo = styled.button`
+  padding: 20px 20px;
   width:100%;
   height: 90px;
   border: none;

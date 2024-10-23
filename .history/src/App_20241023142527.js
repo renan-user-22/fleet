@@ -470,7 +470,7 @@ const App = () => {
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
+          <Box flex={'none'} width={areaDesktop ? '50%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
 
             <SubmitButtonTwo>
               Multas de trânsito em geral

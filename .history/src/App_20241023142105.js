@@ -462,11 +462,11 @@ const App = () => {
       </Box>
 
       <FleetSection id="services">
-        <Box direction={areaDesktop ? 'row' : 'column'} justify={'flex-start'} align={'center'} width={'95%'}>
+        <Box direction={areaDesktop ? 'row' : 'column'} justify={'flex-start'} align={'flex-start'} width={'95%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
+          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={'flex-start'}>
+            <LogoImg src={Ns} width={'90%'} />
           </Box>
 
 

@@ -123,7 +123,7 @@ export const NavBar = styled.nav`
     position: relative;
 
     &:hover {
-      color: #f26b2b;
+      color: #FF4500;
       transition: color 0.3s ease;
     }
 
@@ -131,7 +131,7 @@ export const NavBar = styled.nav`
       content: '';
       width: 100%;
       height: 2px;
-      background-color: #f26b2b;
+      background-color: #FF4500;
       position: absolute;
       bottom: -5px;
       left: 0;
@@ -253,7 +253,7 @@ display: flex;
   align-items: center;
 
   button {
-    background-color: #f26b2b;
+    background-color: #f53629;
     width: 230px;
     color: white;
     padding: 10px 20px;
@@ -296,7 +296,7 @@ export const SubmitButton = styled.button`
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #f26b2b;
+  background-color: #f53629;
   color: #fff;
   margin-left: 20px;
   margin-right: 30px;
@@ -311,8 +311,8 @@ export const SubmitButton = styled.button`
 `;
 
 export const SubmitButtonTwo = styled.button`
+  padding: 20px 20px;
   width:100%;
-  height: 90px;
   border: none;
   border-radius: 5px;
   background-color: #888888;
@@ -323,7 +323,7 @@ export const SubmitButtonTwo = styled.button`
   cursor: pointer;
 
   &:hover {
-      background-color: #f26b2b;
+      background-color: #d72f23;
       transform: translateY(-7px);
     }
 `;
@@ -359,7 +359,7 @@ export const Footer = styled.footer`
       transition: color 0.3s;
 
       &:hover {
-        color: #f26b2b;
+        color: #ffcc00;
       }
     }
   }
@@ -372,8 +372,8 @@ display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  //background-image: url(${backgroundImageBlack});
-  //background-size: cover;
+  background-image: url(${backgroundImageBlack});
+  background-size: cover;
   text-align: center;
   min-height: 600px;
   padding: 50px 0;

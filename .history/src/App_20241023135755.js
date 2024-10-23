@@ -209,7 +209,7 @@ const App = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             >
-              <FaBars size={35} style={{ color: '#f26b2b' }} />
+              <FaBars size={35} style={{ color: '#FF4500' }} />
             </motion.div>
 
             <Drawer
@@ -217,7 +217,7 @@ const App = () => {
               open={drawerOpen}
               onClose={toggleDrawer}
               PaperProps={{
-                style: { width: '50%', padding: '10px', backgroundColor: '#f26b2b' },
+                style: { width: '50%', padding: '10px', backgroundColor: '#FF4500' },
               }}
             >
               <Box
@@ -388,14 +388,14 @@ const App = () => {
 
       </ServicesSection>
 
-      <Box flex={'none'} direction={'column'} width={'100%'} height={'200px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f26b2b)' }} justify={'center'} align={'center'}>
+      <Box flex={'none'} direction={'column'} width={'100%'} height={'200px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f6382a)' }} justify={'center'} align={'center'}>
         <TextDefault align={'center'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Como podemos te ajudar?</TextDefault>
       </Box>
 
       <Box color={'#f5f5f5'} flex={'none'} direction={areaDesktop ? 'row' : 'column'} width={'100%'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
 
         <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
-          <LogoImg top={'50px'} src={ImgMotoristas} width={'115%'} />
+          <LogoImg top={'50px'} src={ImgMotoristas} width={'100%'} />
 
           <TextDefault family={'Century Gothic'} weight={'normal'} align={'justify'} top={'20px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
             Nossa atuação para motoristas é detalhada e estratégica. Analisamos cada infração de forma
@@ -406,10 +406,10 @@ const App = () => {
           </TextDefault>
         </Box>
 
-        <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
-          <LogoImg top={'50px'} src={ImgEmpresas} width={'115%'} />
+        <Box flex={'none'} width={areaDesktop ? '35%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
+          <LogoImg top={'50px'} src={ImgEmpresas} width={'100%'} />
 
-          <TextDefault family={'Century Gothic'} weight={'normal'} align={'justify'} top={'17px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
+          <TextDefault family={'Century Gothic'} weight={'normal'} align={'justify'} top={'17px'} bottom={'35px'} left={'35px'} right={'30px'} color="#000" size={'21px'}>
             Na Fleet Solutions, oferecemos soluções completas e personalizadas para empresas, como o monitoramento inteligente
             de placas, controle e gestão de multas e motoristas. Adaptamos nossos serviços para atender a qualquer demanda
             com eficiência, garantindo segurança e econômia. Nosso foco é otimizar processos, reduzir custos e fortalecer a reputação
@@ -431,7 +431,7 @@ const App = () => {
         <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
 
           {areaDesktop &&
-            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
+            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'}>
               <LogoImg src={ImgFrotas} width={'100%'} />
             </Box>
           }
@@ -462,15 +462,15 @@ const App = () => {
       </Box>
 
       <FleetSection id="services">
-        <Box direction={areaDesktop ? 'row' : 'column'} justify={'flex-start'} align={'center'} width={'95%'}>
+        <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'} width={'95%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
+          <Box flex={'none'} width={areaDesktop ? '50%' : '100%'} direction={'column'} justify={'flex-start'} align={'center'}>
+            <LogoImg src={Ns} width={'100%'} />
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
+          <Box flex={'none'} width={areaDesktop ? '50%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
 
             <SubmitButtonTwo>
               Multas de trânsito em geral
