@@ -239,25 +239,25 @@ const App = () => {
                   </LinkMenu>
 
                   <LinkMenu onClick={handleClick} id="home" smooth={true} duration={500}>
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Início <HiHome style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu href="#services">
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Serviços <MdDesignServices style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu href="#fleet">
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Fleet Solutions <MdAssuredWorkload style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu onClick={() => actionHelloWhatsApp()}>
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Contato <IoLogoWhatsapp style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
@@ -362,7 +362,7 @@ const App = () => {
             <TextDefault bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Foi Multado?</TextDefault>
           </Box>
 
-          <TextDefault family={'Caviar Dreams'} align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
+          <TextDefault family={'Century Gothic'} align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
             Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
             para enfrentar esses desafios de forma eficiente e estratégica.
             Nossa equipe é especializada em desenvolver recursos
@@ -397,7 +397,7 @@ const App = () => {
         <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
           <LogoImg top={'50px'} src={ImgMotoristas} width={'115%'} />
 
-          <TextDefault family={'Caviar Dreams'} weight={'normal'} align={'justify'} top={'20px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
+          <TextDefault family={'Century Gothic'} weight={'normal'} align={'justify'} top={'20px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
             Nossa atuação para motoristas é detalhada e estratégica. Analisamos cada infração de forma
             individual, desenvolvendo defesas totalmente personalizadas - sem utilizar modelos prontos.
             Buscamos a melhor estratégia de defesa possível, oferecendo suporte completo para que você
@@ -409,7 +409,7 @@ const App = () => {
         <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
           <LogoImg top={'50px'} src={ImgEmpresas} width={'115%'} />
 
-          <TextDefault family={'Caviar Dreams'} weight={'normal'} align={'justify'} top={'17px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
+          <TextDefault family={'Century Gothic'} weight={'normal'} align={'justify'} top={'17px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={'21px'}>
             Na Fleet Solutions, oferecemos soluções completas e personalizadas para empresas, como o monitoramento inteligente
             de placas, controle e gestão de multas e motoristas. Adaptamos nossos serviços para atender a qualquer demanda
             com eficiência, garantindo segurança e econômia. Nosso foco é otimizar processos, reduzir custos e fortalecer a reputação
@@ -527,7 +527,7 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '999px' : '450px'} id="fleet">
+      <HeroSection height={areaDesktop ? '900px' : '400px'} id="fleet">
         <TextDefault align={'center'} bottom={'10px'} top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
         <LogoImg src={Pq} width={areaDesktop ? '70%' : '110%'} />
@@ -566,7 +566,7 @@ const App = () => {
 
         </div>
 
-        <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
+        <TextDefault top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
       </Footer>
     </Container>
   );

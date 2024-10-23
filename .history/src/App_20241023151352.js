@@ -185,7 +185,7 @@ const App = () => {
 
         {areaDesktop &&
           <NavBar style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-            <a href="#home" style={{ display: 'flex', alignItems: 'center' }}>
+            <a href="#home" style={{ fontFamily:'Nebula', display: 'flex', alignItems: 'center' }}>
               <HiHome style={{ marginRight: '8px' }} /> Início
             </a>
             <a href="#services" style={{ display: 'flex', alignItems: 'center' }}>
@@ -239,25 +239,25 @@ const App = () => {
                   </LinkMenu>
 
                   <LinkMenu onClick={handleClick} id="home" smooth={true} duration={500}>
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Início <HiHome style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu href="#services">
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Serviços <MdDesignServices style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu href="#fleet">
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Fleet Solutions <MdAssuredWorkload style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
 
                   <LinkMenu onClick={() => actionHelloWhatsApp()}>
-                    <TextDefault color="#FFFFFF" size="19px" align={'right'}>
+                    <TextDefault color="#FFFFFF" size="19px">
                       Contato <IoLogoWhatsapp style={{ marginRight: '8px', color: '#FFF' }} />
                     </TextDefault>
                   </LinkMenu>
@@ -566,7 +566,7 @@ const App = () => {
 
         </div>
 
-        <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
+        <TextDefault top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
       </Footer>
     </Container>
   );

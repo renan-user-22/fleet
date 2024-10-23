@@ -566,7 +566,7 @@ const App = () => {
 
         </div>
 
-        <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
+        <TextDefault top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
       </Footer>
     </Container>
   );

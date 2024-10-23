@@ -362,7 +362,7 @@ const App = () => {
             <TextDefault bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Foi Multado?</TextDefault>
           </Box>
 
-          <TextDefault family={'Caviar Dreams'} align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
+          <TextDefault  align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
             Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
             para enfrentar esses desafios de forma eficiente e estratégica.
             Nossa equipe é especializada em desenvolver recursos
@@ -566,7 +566,7 @@ const App = () => {
 
         </div>
 
-        <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
+        <TextDefault top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
       </Footer>
     </Container>
   );

@@ -251,7 +251,7 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:50px;
+  margin-top:100px;
 
   button {
     background-color: #f26b2b;
@@ -317,7 +317,6 @@ export const SubmitButtonTwo = styled.button`
   border: none;
   border-radius: 5px;
   background-color: #888888;
-  font-family: Nebula;
   color: #fff;
   margin: 10px;
   font-size: 16px;

@@ -243,7 +243,7 @@ export const LinkMenu = styled.a`
 `;
 
 export const HeroSection = styled.section`
-  display: flex;
+display: flex;
   width: 100%;
   height: ${(props) => props.height};
   background-size: cover;
@@ -251,7 +251,7 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:50px;
+  margin-top:150px
 
   button {
     background-color: #f26b2b;
@@ -317,7 +317,6 @@ export const SubmitButtonTwo = styled.button`
   border: none;
   border-radius: 5px;
   background-color: #888888;
-  font-family: Nebula;
   color: #fff;
   margin: 10px;
   font-size: 16px;
@@ -368,13 +367,12 @@ export const Footer = styled.footer`
 `;
 
 export const FleetSection = styled.section`
-  display: flex;
+display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 50px;
   //background-image: url(${backgroundImageBlack});
   //background-size: cover;
   text-align: center;
