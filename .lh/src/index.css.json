@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1727721749893,
@@ -32,6 +32,50 @@
                 {
                     "date": 1729033677990,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body {\n   margin: 0;\n   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic'\n+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n   overflow-y:scroll;\n"
+                },
+                {
+                    "date": 1729606966861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body {\n   margin: 0;\n-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n+  font-family: Nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n"
+                },
+                {
+                    "date": 1729606999932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n   };\n }\n \n code {\n-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n+  font-family:Nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n     monospace;\n }\n"
+                },
+                {
+                    "date": 1729607021057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n   };\n }\n \n code {\n-  font-family:Nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n+  font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n     monospace;\n }\n"
+                },
+                {
+                    "date": 1729607026424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body {\n   margin: 0;\n-  font-family: Nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n+  font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n"
+                },
+                {
+                    "date": 1729607787672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,15 @@\n     background-color: #FF4500;\n   };\n }\n \n+@font-face {\n+  font-family: 'Nebula';\n+  src: url('./fonts/nebula.ttf') format('truetype'); /* Caminho da sua fonte */\n+  font-weight: normal;\n+  font-style: normal;\n+}\n+\n code {\n   font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n     monospace;\n }\n"
+                },
+                {
+                    "date": 1729608745196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,12 @@\n body {\n   margin: 0;\n+  @font-face {\n+    font-family: 'Nebula';\n+    src: url('./fonts/nebula.ttf') format('truetype'); /* Caminho da sua fonte */\n+    font-weight: normal;\n+    font-style: normal;\n+  }\n   font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n@@ -15,14 +21,8 @@\n     background-color: #FF4500;\n   };\n }\n \n-@font-face {\n-  font-family: 'Nebula';\n-  src: url('./fonts/nebula.ttf') format('truetype'); /* Caminho da sua fonte */\n-  font-weight: normal;\n-  font-style: normal;\n-}\n \n code {\n   font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n     monospace;\n"
+                },
+                {
+                    "date": 1729608761402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n body {\n   margin: 0;\n   @font-face {\n     font-family: 'Nebula';\n-    src: url('./fonts/nebula.ttf') format('truetype'); /* Caminho da sua fonte */\n     font-weight: normal;\n     font-style: normal;\n   }\n   font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n"
+                },
+                {
+                    "date": 1729608786554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,6 @@\n body {\n   margin: 0;\n-  @font-face {\n-    font-family: 'Nebula';\n-    font-weight: normal;\n-    font-style: normal;\n-  }\n   font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n"
+                },
+                {
+                    "date": 1729608786722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+body {\n+  margin: 0;\n+  font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n+    sans-serif;\n+  -webkit-font-smoothing: antialiased;\n+  -moz-osx-font-smoothing: grayscale;\n+  overflow-y:scroll;\n+\n+  &::-webkit-scrollbar {\n+    width: 6px;\n+    height: 6px;\n+  };\n+  &::-webkit-scrollbar-thumb {\n+    background-color: #FF4500;\n+  };\n+}\n+\n+\n+code {\n+  font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n+    monospace;\n+}\n"
+                },
+                {
+                    "date": 1729608794562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body {\n   margin: 0;\n-  font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n+  font-family: 'Nebula', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n   -moz-osx-font-smoothing: grayscale;\n@@ -20,27 +20,4 @@\n code {\n   font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n     monospace;\n }\n-body {\n-  margin: 0;\n-  font-family: nebula, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n-    sans-serif;\n-  -webkit-font-smoothing: antialiased;\n-  -moz-osx-font-smoothing: grayscale;\n-  overflow-y:scroll;\n-\n-  &::-webkit-scrollbar {\n-    width: 6px;\n-    height: 6px;\n-  };\n-  &::-webkit-scrollbar-thumb {\n-    background-color: #FF4500;\n-  };\n-}\n-\n-\n-code {\n-  font-family: nebula, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n-    monospace;\n-}\n"
+                },
+                {
+                    "date": 1729632406694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n body {\n   margin: 0;\n+  background-color: #f5f5f5;\n   font-family: 'Nebula', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Century Gothic',\n     sans-serif;\n   -webkit-font-smoothing: antialiased;\n"
                 }
             ],
             "date": 1727721749893,
