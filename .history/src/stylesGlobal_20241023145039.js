@@ -312,7 +312,7 @@ export const SubmitButton = styled.button`
 
 export const SubmitButtonTwo = styled.button`
   width:100%;
-  height: 70px;
+  height: 80px;
   border: none;
   border-radius: 5px;
   background-color: #888888;
