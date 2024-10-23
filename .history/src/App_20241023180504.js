@@ -527,9 +527,9 @@ const App = () => {
       </FleetSection>
 
       <HeroSection height={areaDesktop ? '800px' : '450px'} id="fleet">
-        <TextDefault align={'center'}  top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
+        <TextDefault align={'center'} bottom={'10px'} top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
-        <LogoImg src={Pq} width={areaDesktop ? '90%' : '120%'} />
+        <LogoImg src={Pq} width={areaDesktop ? '60%' : '110%'} />
 
         <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>

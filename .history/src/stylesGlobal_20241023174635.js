@@ -144,7 +144,7 @@ export const NavBar = styled.nav`
 export const WelcomeTextWrapper = styled.div`
   position: absolute;
   left: 10px; // Texto ficará à esquerda
-  top: 20%;
+  top: 18%;
   z-index: 1; // Texto acima do fundo
   max-width: ${(props) => props.width || '50%'};
   animation: ${fadeIn} 2.5s ease;
@@ -161,7 +161,7 @@ export const WelcomeTextWrapperLogo = styled.div`
 
 export const WelcomeTextWrapperLogoTwo = styled.div`
   display: flex;
-  top: 80%;
+  top: 77%;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -252,7 +252,6 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   margin-top:50px;
 
   button {

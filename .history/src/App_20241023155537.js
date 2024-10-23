@@ -172,7 +172,7 @@ const App = () => {
     <Container>
 
       {/* Background com Parallax e Zoom */}
-      <BackgroundImage id="home" height={areaDesktop ? '100vh' : '90vh'} />
+      <BackgroundImage id="home" height={areaDesktop ? '120vh' : '100vh'} />
 
       <Whats onClick={actionHelloWhatsApp}>
         <LogoImg left={'30px'} src={WhatsImg} alt="WhatsApp" />
@@ -269,11 +269,11 @@ const App = () => {
         )}
       </HeaderWrapper>
 
-      <WelcomeTextWrapper width={areaDesktop ? '70%' : '85%'}>
+      <WelcomeTextWrapper width={areaDesktop ? '50%' : '85%'}>
 
         <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
-          <TextDefault family={'Octosquares Bold'} bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '20px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
-          <TextDefault family={'Octosquares Italic'} bottom={'20px'} right={'10px'} color="#000" size={isMobile ? '14px' : '19px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
+          <TextDefault bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '22px' : '35px'} left="30px">Precisando de assistência especializada?</TextDefault>
+          <TextDefault family={'Octosquares'} bottom={'30px'} right={'10px'} color="#000" size={isMobile ? '14px' : '19px'} left={"30px"}>Preencha o formulário abaixo e fale com o especialista agora!</TextDefault>
         </Box>
 
         <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
@@ -310,7 +310,7 @@ const App = () => {
             )}
           </InputMask>
 
-          <TextDefault family={'Octosquares Italic'} bottom={'10px'} color="#f26b2b" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
+          <TextDefault family={'Octosquares'} bottom={'20px'} color="#000" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
 
           <SelectField
             name="option"
@@ -334,7 +334,7 @@ const App = () => {
           </SelectField>
 
           <SubmitButton onClick={(e) => sendEmail(e)}>
-            <TextDefault family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '19px' : '19px'}>FALAR com um especialista</TextDefault>
+            <TextDefault color="#f5f5f5" size={isMobile ? '19px' : '19px'}>Falar com um especialista</TextDefault>
           </SubmitButton>
 
         </Box>
@@ -358,7 +358,7 @@ const App = () => {
         <Box flex={'none'} direction={'column'} width={areaDesktop ? '60%' : '100%'} justify={'flex-start'} align={'center'}>
 
           <Box flex={'none'} direction={'column'} width={'100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
-            <TextDefault family={'Octosquares Bold'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Foi Multado?</TextDefault>
+            <TextDefault family={'Octosquares'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Foi Multado?</TextDefault>
           </Box>
 
           <TextDefault family={'Caviar Dreams'} align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
@@ -370,7 +370,7 @@ const App = () => {
             para alcançar a melhor solução possível.
           </TextDefault>
 
-          <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+          <TextDefault family={'Arial'} weight={'bold'} align={'center'} top={'100px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
             NÃO CORRA O RISCO DE PERDER SUA CNH,
             SAIBA SEUS DIREITOS!
           </TextDefault>
@@ -388,7 +388,7 @@ const App = () => {
       </ServicesSection>
 
       <Box flex={'none'} direction={'column'} width={'100%'} height={'200px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f26b2b)' }} justify={'center'} align={'center'}>
-        <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Como podemos te ajudar?</TextDefault>
+        <TextDefault family={'Octosquares'} align={'center'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Como podemos te ajudar?</TextDefault>
       </Box>
 
       <Box color={'#f5f5f5'} flex={'none'} direction={areaDesktop ? 'row' : 'column'} width={'100%'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
@@ -423,7 +423,7 @@ const App = () => {
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
-            <TextDefault family={'Octosquares Bold'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Evite perder dinheiro.</TextDefault>
+            <TextDefault family={'Octosquares'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Evite perder dinheiro.</TextDefault>
           </Box>
         </Box>
 
@@ -449,11 +449,11 @@ const App = () => {
               </p>
             </TextDefault>
 
-            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+            <TextDefault family={'Arial'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
               ECONOMIZE E PROTEJA SUA EMPRESA AGORA!
             </TextDefault>
 
-            <SubmitButton onClick={actionHelloWhatsApp} >FALAR com um especialista em FROTA</SubmitButton>
+            <SubmitButton onClick={actionHelloWhatsApp} >falar com um especialista em FROTA</SubmitButton>
           </Box>
 
         </Box>
@@ -465,7 +465,7 @@ const App = () => {
 
 
           <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '75%' : '100%'} />
+            <LogoImg src={Ns} width={areaDesktop ? '80%' : '100%'} />
           </Box>
 
 
@@ -526,10 +526,10 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '450px'} id="fleet">
-        <TextDefault align={'center'}  top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
+      <HeroSection height={areaDesktop ? '999px' : '450px'} id="fleet">
+        <TextDefault align={'center'} bottom={'10px'} top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
-        <LogoImg src={Pq} width={areaDesktop ? '90%' : '120%'} />
+        <LogoImg src={Pq} width={areaDesktop ? '70%' : '110%'} />
 
         <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>

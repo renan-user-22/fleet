@@ -252,7 +252,6 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   margin-top:50px;
 
   button {

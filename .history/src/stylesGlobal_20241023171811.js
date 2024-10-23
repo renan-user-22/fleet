@@ -38,7 +38,7 @@ export const BackgroundImage = styled.div`
   background-size: cover;
   background-attachment: fixed; /* Imagem fixa durante o scroll */
   background-position: center;
-  height: ${(props) => props.height || '100vh'};
+  height: ${(props) => props.height || '110vh'};
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -153,7 +153,7 @@ export const WelcomeTextWrapper = styled.div`
 export const WelcomeTextWrapperLogo = styled.div`
   position: absolute;
   right: 90px; // Texto ficará à esquerda
-  top: 15%;
+  top: 25%;
   z-index: 1; // Texto acima do fundo
   max-width: 25%;
   animation: ${fadeIn} 2.5s ease;
@@ -161,7 +161,7 @@ export const WelcomeTextWrapperLogo = styled.div`
 
 export const WelcomeTextWrapperLogoTwo = styled.div`
   display: flex;
-  top: 80%;
+  top: 100%;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -252,7 +252,6 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   margin-top:50px;
 
   button {
@@ -280,7 +279,7 @@ export const InputField = styled.input`
   border: 1px solid #ccc;
   font-size: 16px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 // Select dropdown
@@ -303,7 +302,7 @@ export const SubmitButton = styled.button`
   color: #fff;
   margin-left: 20px;
   margin-right: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 16px;
   font-family: Octosquares Italic;
   cursor: pointer;
@@ -316,7 +315,7 @@ export const SubmitButton = styled.button`
 
 export const SubmitButtonTwo = styled.button`
   width:100%;
-  height: 70px;
+  height: 90px;
   border: none;
   border-radius: 5px;
   background-color: #888888;

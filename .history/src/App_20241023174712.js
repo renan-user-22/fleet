@@ -310,7 +310,7 @@ const App = () => {
             )}
           </InputMask>
 
-          <TextDefault family={'Octosquares Italic'} bottom={'10px'} color="#f26b2b" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
+          <TextDefault family={'Octosquares Italic'} bottom={'10px'} color="#000" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
 
           <SelectField
             name="option"
@@ -465,7 +465,7 @@ const App = () => {
 
 
           <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'}>
-            <LogoImg src={Ns} width={areaDesktop ? '75%' : '100%'} />
+            <LogoImg src={Ns} width={areaDesktop ? '90%' : '100%'} />
           </Box>
 
 
@@ -526,10 +526,10 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '450px'} id="fleet">
-        <TextDefault align={'center'}  top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
+      <HeroSection height={areaDesktop ? '999px' : '450px'} id="fleet">
+        <TextDefault align={'center'} bottom={'10px'} top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
-        <LogoImg src={Pq} width={areaDesktop ? '90%' : '120%'} />
+        <LogoImg src={Pq} width={areaDesktop ? '70%' : '110%'} />
 
         <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>

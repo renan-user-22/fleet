@@ -144,7 +144,7 @@ export const NavBar = styled.nav`
 export const WelcomeTextWrapper = styled.div`
   position: absolute;
   left: 10px; // Texto ficará à esquerda
-  top: 20%;
+  top: 15%;
   z-index: 1; // Texto acima do fundo
   max-width: ${(props) => props.width || '50%'};
   animation: ${fadeIn} 2.5s ease;
@@ -153,7 +153,7 @@ export const WelcomeTextWrapper = styled.div`
 export const WelcomeTextWrapperLogo = styled.div`
   position: absolute;
   right: 90px; // Texto ficará à esquerda
-  top: 15%;
+  top: 20%;
   z-index: 1; // Texto acima do fundo
   max-width: 25%;
   animation: ${fadeIn} 2.5s ease;
@@ -252,7 +252,6 @@ export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   margin-top:50px;
 
   button {
@@ -316,7 +315,7 @@ export const SubmitButton = styled.button`
 
 export const SubmitButtonTwo = styled.button`
   width:100%;
-  height: 70px;
+  height: 90px;
   border: none;
   border-radius: 5px;
   background-color: #888888;
