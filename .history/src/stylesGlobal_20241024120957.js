@@ -306,8 +306,6 @@ export const SubmitButton = styled.button`
   margin-bottom: 20px;
   font-size: 14px;
   font-family: Octosquares Italic;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 
   &:hover {

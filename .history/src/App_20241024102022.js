@@ -14,8 +14,7 @@ import ImgEmpresas from './img/empresas.jpg';
 import ImgMotoristas from './img/motoristas.jpg';
 import ImgFrotas from './img/frotass.png';
 import Ns from './img/ns.png';
-import PqTwo from './img/pqFleetTwo.png';
-import PqOne from './img/pqFleet.png';
+import Pq from './img/pqFleet.png';
 // Ícones do layout
 import { FaInstagram, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
@@ -79,14 +78,6 @@ const App = () => {
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
-
-  const actionHelloWhatsAppAssunt = (buttonText) => {
-    const phoneNumber = '+5532998195571';
-    const message = `Olá, gostaria de solicitar um atendimento sobre: ${buttonText}.`;
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
-  };
-
 
   const sendEmail = (e) => {
     e.preventDefault(); // Evita o envio padrão do formulário
@@ -343,7 +334,7 @@ const App = () => {
           </SelectField>
 
           <SubmitButton onClick={(e) => sendEmail(e)}>
-            <TextDefault  justify={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR com um especialista</TextDefault>
+            <TextDefault family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '19px' : '19px'}>FALAR com um especialista</TextDefault>
           </SubmitButton>
 
         </Box>
@@ -367,7 +358,7 @@ const App = () => {
         <Box flex={'none'} direction={'column'} width={areaDesktop ? '60%' : '100%'} justify={'flex-start'} align={'center'}>
 
           <Box flex={'none'} direction={'column'} width={'100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
-            <TextDefault family={'Octosquares Bold'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>FOI MULTADO?</TextDefault>
+            <TextDefault family={'Octosquares Bold'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Foi Multado?</TextDefault>
           </Box>
 
           <TextDefault family={'Caviar Dreams'} align={'justify'} top={'30px'} left={'35px'} right={'35px'} color="#000" size={isMobile ? '18px' : '21px'}>
@@ -379,15 +370,12 @@ const App = () => {
             para alcançar a melhor solução possível.
           </TextDefault>
 
-          <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'0px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+          <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
             NÃO CORRA O RISCO DE PERDER SUA CNH,
-          </TextDefault>
-
-          <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'0px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
             SAIBA SEUS DIREITOS!
           </TextDefault>
 
-          <SubmitButton onClick={actionHelloWhatsApp} >QUERO falar com um especialista</SubmitButton>
+          <SubmitButton onClick={actionHelloWhatsApp} >Quero falar com um especialista</SubmitButton>
         </Box>
 
 
@@ -399,8 +387,8 @@ const App = () => {
 
       </ServicesSection>
 
-      <Box flex={'none'} direction={'column'} width={'100%'} height={'170px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f26b2b)' }} justify={'center'} align={'center'}>
-        <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>COMO PODEMOS TE AJUDAR?</TextDefault>
+      <Box flex={'none'} direction={'column'} width={'100%'} height={'200px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f26b2b)' }} justify={'center'} align={'center'}>
+        <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Como podemos te ajudar?</TextDefault>
       </Box>
 
       <Box color={'#f5f5f5'} flex={'none'} direction={areaDesktop ? 'row' : 'column'} width={'100%'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
@@ -435,7 +423,7 @@ const App = () => {
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
-            <TextDefault family={'Octosquares Bold'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>EVITE PERDER DINHEIRO.</TextDefault>
+            <TextDefault family={'Octosquares Bold'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Evite perder dinheiro.</TextDefault>
           </Box>
         </Box>
 
@@ -483,54 +471,53 @@ const App = () => {
 
           <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
 
-            <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo>
               Multas de trânsito em geral
             </SubmitButtonTwo>
 
             <Box flex={'none'} width={'103%'} direction={'row'} justify={'center'} align={'center'}>
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo>
                 Defesa/Recurso do bafômetro/ lei seca
               </SubmitButtonTwo>
 
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo>
                 Excesso de velocidade acima de 50%
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo>
               Excesso de pontos na CNH
             </SubmitButtonTwo>
 
             <Box flex={'none'} width={'103%'} direction={'row'}>
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo>
                 Suspensão do direito de dirigir
               </SubmitButtonTwo>
 
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo>
                 Cassação de CNH
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo>
               Multa por não indicar condutor (NIC)
             </SubmitButtonTwo>
 
-            <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo>
               Ultrapassagem em faixa contínua amarela
             </SubmitButtonTwo>
 
             <Box flex={'none'} width={'103%'} direction={'row'}>
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo>
                 Consultoria preventiva e personalizada para você
               </SubmitButtonTwo>
 
-
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
-                Gestão inteligente e personalizada de FROTAS
+              <SubmitButtonTwo>
+                gestão inteligente e personalizada de FROTAS
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo>
               Soluções para empresas
             </SubmitButtonTwo>
 
@@ -539,15 +526,12 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '1100px'} id="fleet">
-        <TextDefault align={'center'} right={'30px'} left={'30px'} top={'40px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
+      <HeroSection height={areaDesktop ? '800px' : '450px'} id="fleet">
+        <TextDefault align={'center'}  top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
+        <LogoImg src={Pq} width={areaDesktop ? '90%' : '120%'} />
 
-        <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'}>
-          <LogoImg src={PqOne} width={areaDesktop ? '70%' : '95%'} />
-          <LogoImg src={PqTwo} width={areaDesktop ? '70%' : '95%'} />
-        </Box>
-
+        <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>
 
       {/* Footer */}

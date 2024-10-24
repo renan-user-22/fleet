@@ -539,8 +539,8 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '1100px'} id="fleet">
-        <TextDefault align={'center'} right={'30px'} left={'30px'} top={'40px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
+      <HeroSection height={areaDesktop ? '800px' : '900px'} id="fleet">
+        <TextDefault align={'center'} top={'40px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
 
 
         <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'}>
@@ -548,6 +548,7 @@ const App = () => {
           <LogoImg src={PqTwo} width={areaDesktop ? '70%' : '95%'} />
         </Box>
 
+        <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>
 
       {/* Footer */}

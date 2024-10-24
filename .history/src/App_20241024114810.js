@@ -14,8 +14,7 @@ import ImgEmpresas from './img/empresas.jpg';
 import ImgMotoristas from './img/motoristas.jpg';
 import ImgFrotas from './img/frotass.png';
 import Ns from './img/ns.png';
-import PqTwo from './img/pqFleetTwo.png';
-import PqOne from './img/pqFleet.png';
+import Pq from './img/pqFleet.png';
 // Ícones do layout
 import { FaInstagram, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
@@ -86,7 +85,7 @@ const App = () => {
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
-
+  
 
   const sendEmail = (e) => {
     e.preventDefault(); // Evita o envio padrão do formulário
@@ -343,7 +342,7 @@ const App = () => {
           </SelectField>
 
           <SubmitButton onClick={(e) => sendEmail(e)}>
-            <TextDefault  justify={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR com um especialista</TextDefault>
+            <TextDefault family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '19px' : '19px'}>FALAR com um especialista</TextDefault>
           </SubmitButton>
 
         </Box>
@@ -502,7 +501,7 @@ const App = () => {
             </SubmitButtonTwo>
 
             <Box flex={'none'} width={'103%'} direction={'row'}>
-              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}> 
                 Suspensão do direito de dirigir
               </SubmitButtonTwo>
 
@@ -539,15 +538,12 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '1100px'} id="fleet">
-        <TextDefault align={'center'} right={'30px'} left={'30px'} top={'40px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
+      <HeroSection height={areaDesktop ? '800px' : '450px'} id="fleet">
+        <TextDefault align={'center'} top={'60px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>Por que a Fleet Solutions é a sua parceira ideal?</TextDefault>
 
+        <LogoImg src={Pq} width={areaDesktop ? '90%' : '120%'} />
 
-        <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'}>
-          <LogoImg src={PqOne} width={areaDesktop ? '70%' : '95%'} />
-          <LogoImg src={PqTwo} width={areaDesktop ? '70%' : '95%'} />
-        </Box>
-
+        <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>
 
       {/* Footer */}

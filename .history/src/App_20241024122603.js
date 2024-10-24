@@ -548,6 +548,7 @@ const App = () => {
           <LogoImg src={PqTwo} width={areaDesktop ? '70%' : '95%'} />
         </Box>
 
+        <LogoImg src={LogoMarca} width={areaDesktop ? '300px' : '150px'} />
       </HeroSection>
 
       {/* Footer */}
