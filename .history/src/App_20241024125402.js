@@ -400,7 +400,7 @@ const App = () => {
       </ServicesSection>
 
       <Box flex={'none'} direction={'column'} width={'100%'} height={'170px'} style={{ background: 'linear-gradient(to right, #eebe2c, #f26b2b)' }} justify={'center'} align={'center'}>
-        <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>COMO PODEMOS TE AJUDAR?</TextDefault>
+        <TextDefault justify={'center'} family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>COMO PODEMOS TE AJUDAR?</TextDefault>
       </Box>
 
       <Box color={'#f5f5f5'} flex={'none'} direction={areaDesktop ? 'row' : 'column'} width={'100%'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
