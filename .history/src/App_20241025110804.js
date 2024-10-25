@@ -225,7 +225,7 @@ const App = () => {
               open={drawerOpen}
               onClose={toggleDrawer}
               PaperProps={{
-                style: { width: '60%', padding: '10px', backgroundColor: '#f26b2b' },
+                style: { width: '50%', padding: '10px', backgroundColor: '#f26b2b' },
               }}
             >
               <Box
@@ -343,7 +343,7 @@ const App = () => {
           </SelectField>
 
           <SubmitButton onClick={(e) => sendEmail(e)}>
-            <TextDefault  align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR COM UM ESPECIALISTA</TextDefault>
+            <TextDefault  justify={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR COM UM ESPECIALISTA</TextDefault>
           </SubmitButton>
 
         </Box>

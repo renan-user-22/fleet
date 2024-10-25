@@ -225,7 +225,7 @@ const App = () => {
               open={drawerOpen}
               onClose={toggleDrawer}
               PaperProps={{
-                style: { width: '60%', padding: '10px', backgroundColor: '#f26b2b' },
+                style: { width: '50%', padding: '10px', backgroundColor: '#f26b2b' },
               }}
             >
               <Box

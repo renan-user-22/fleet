@@ -225,7 +225,7 @@ const App = () => {
               open={drawerOpen}
               onClose={toggleDrawer}
               PaperProps={{
-                style: { width: '60%', padding: '10px', backgroundColor: '#f26b2b' },
+                style: { width: '50%', padding: '10px', backgroundColor: '#f26b2b' },
               }}
             >
               <Box
@@ -343,7 +343,7 @@ const App = () => {
           </SelectField>
 
           <SubmitButton onClick={(e) => sendEmail(e)}>
-            <TextDefault  align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR COM UM ESPECIALISTA</TextDefault>
+            <TextDefault  justify={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR COM UM ESPECIALISTA</TextDefault>
           </SubmitButton>
 
         </Box>
@@ -387,7 +387,7 @@ const App = () => {
             SAIBA SEUS DIREITOS!
           </TextDefault>
 
-          <SubmitButton onClick={actionHelloWhatsApp} >QUERO FALAR COM UM ESPECIALISTA</SubmitButton>
+          <SubmitButton onClick={actionHelloWhatsApp} >QUERO falar com um especialista</SubmitButton>
         </Box>
 
 
@@ -465,7 +465,7 @@ const App = () => {
               ECONOMIZE E PROTEJA SUA EMPRESA AGORA!
             </TextDefault>
 
-            <SubmitButton onClick={actionHelloWhatsApp} >FALAR COM UM ESPECIALISTA EM FROTAS</SubmitButton>
+            <SubmitButton onClick={actionHelloWhatsApp} >FALAR com um especialista em FROTA</SubmitButton>
           </Box>
 
         </Box>
@@ -489,7 +489,7 @@ const App = () => {
 
             <Box flex={'none'} width={'103%'} direction={'row'} justify={'center'} align={'center'}>
               <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
-                Defesa/Recurso do bafômetro/ Lei seca
+                Defesa/Recurso do bafômetro/ lei seca
               </SubmitButtonTwo>
 
               <SubmitButtonTwo onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
@@ -543,9 +543,9 @@ const App = () => {
         <TextDefault align={'center'} right={'30px'} left={'30px'} top={'40px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
 
 
-        <Box flex={'none'} width={areaDesktop ? '100%' : '100%'} direction={areaDesktop ? 'row' : 'column'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
-          <LogoImg src={PqOne} width={areaDesktop ? '35%' : '95%'} />
-          <LogoImg src={PqTwo} width={areaDesktop ? '35%' : '95%'} />
+        <Box flex={'none'} width={areaDesktop ? '40%' : '100%'} direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={'center'}>
+          <LogoImg src={PqOne} width={areaDesktop ? '70%' : '95%'} />
+          <LogoImg src={PqTwo} width={areaDesktop ? '70%' : '95%'} />
         </Box>
 
       </HeroSection>

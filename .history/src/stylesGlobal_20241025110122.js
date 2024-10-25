@@ -274,7 +274,7 @@ export const HeroSection = styled.section`
 `;
 // Input fields
 export const InputField = styled.input`
-  width: 70%;
+  width: 60%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -285,7 +285,7 @@ export const InputField = styled.input`
 
 // Select dropdown
 export const SelectField = styled.select`
-  width: 73%;
+  width: 63%;
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 20px;
