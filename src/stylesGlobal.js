@@ -153,7 +153,7 @@ export const WelcomeTextWrapper = styled.div`
 export const WelcomeTextWrapperLogo = styled.div`
   position: absolute;
   right: 90px; // Texto ficará à esquerda
-  top: 15%;
+  top: 25%;
   z-index: 1; // Texto acima do fundo
   max-width: 25%;
   animation: ${fadeIn} 2.5s ease;
@@ -227,10 +227,10 @@ export const ServicesSection = styled.div`
   display: flex;
   flex:1;
   width: 100%;
-  min-height: 500px; /* Define uma altura mínima */
+  min-height: 650px; /* Define uma altura mínima */
   background-color: #f5f5f5;
   flex-direction: ${(props) => props.direction || 'row'};
-  padding: 20px 0; /* Adiciona padding para espaçamento vertical */
+  padding: 20px 0px; /* Adiciona padding para espaçamento vertical */
 `;
 
 export const LinkMenu = styled.a`
@@ -247,7 +247,9 @@ export const HeroSection = styled.section`
   display: flex;
   width: 100%;
   height: ${(props) => props.height};
-  background-size: cover;
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center;  /* Centraliza a imagem */
+  background-size: cover;  
   background-image: url(${backgroundImageWhite});
   display: flex;
   flex-direction: column;
@@ -279,16 +281,16 @@ export const InputField = styled.input`
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 10px;
 `;
 
 // Select dropdown
 export const SelectField = styled.select`
-  width: 73%;
+  width: 72%;
   padding: 10px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -296,14 +298,14 @@ export const SelectField = styled.select`
 
 // Submit Button
 export const SubmitButton = styled.button`
-  padding: 10px 20px;
+  padding: 20px 20px;
+  width: ${(props) => props.width || '0px'};
   border: none;
   border-radius: 5px;
   background-color: #f26b2b;
   color: #fff;
-  margin-left: 20px;
-  margin-right: 30px;
   margin-bottom: 20px;
+  margin-left: ${(props) => props.left || '0px'};
   font-size: 14px;
   font-family: Octosquares Italic;
   justify-content: center;
@@ -318,14 +320,15 @@ export const SubmitButton = styled.button`
 
 export const SubmitButtonTwo = styled.button`
   width:100%;
-  height: 70px;
+  padding: 5px;
+  height: ${(props) => props.height || '85px'};
   border: none;
   border-radius: 5px;
   background-color: #888888;
   font-family: Octosquares Italic;
   color: #fff;
-  margin: 10px;
-  font-size: 16px;
+  margin: 5px;
+  font-size: 13px;
   transition: transform 0.5s ease;
   cursor: pointer;
 
@@ -374,7 +377,7 @@ export const Footer = styled.footer`
 
 export const FleetSection = styled.section`
   display: flex;
-  width: 100%;
+  width: 97%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -384,7 +387,6 @@ export const FleetSection = styled.section`
   //background-size: cover;
   text-align: center;
   min-height: 600px;
-  padding: 50px 0;
 
   h2 {
     font-size: 2.5rem;
