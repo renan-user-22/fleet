@@ -286,7 +286,7 @@ const App = () => {
 
         <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
           <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '20px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
-          <TextDefault weight={'bold'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#000" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
+          <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#000" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
         </Box>
 
         <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
@@ -367,7 +367,7 @@ const App = () => {
         </WelcomeTextWrapperLogoTwo>
       }
 
-      <Box color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+      <Box color={'#f5f5f5'} flex={'1'} height={'100vh'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} topSpace={'50px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
@@ -413,7 +413,7 @@ const App = () => {
 
       </Box>
 
-      <Box color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} topSpace={'50px'}>
+      <Box height={'100vh'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
@@ -456,7 +456,7 @@ const App = () => {
 
 
 
-      <Box topSpace={'30px'} bottomSpace={'50px'} flex={'none'} direction={'column'} width={'100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
+      <Box topSpace={'50px'} bottomSpace={'50px'} flex={'none'} direction={'column'} width={'100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
         <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>COMO PODEMOS TE AJUDAR?</TextDefault>
       </Box>
 
@@ -465,6 +465,7 @@ const App = () => {
         flex={'none'}
         direction={areaDesktop ? 'row' : 'column'}
         width={'100%'}
+        height={'100vh'}
         justify={areaDesktop ? 'space-around' : 'center'}
         align={'center'}
       >
@@ -534,31 +535,32 @@ const App = () => {
         <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'} width={'100%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'} bottomSpace={'50px'}>
+          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'} bottomSpace={'50px'}>
+            
             <Box topSpace={'5px'} flex={'none'} direction={'column'} width={areaDesktop ? '90%' : '100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
               <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>NOSSOS SERVIÇOS</TextDefault>
             </Box>
 
-            <Box flex={'1'} width={areaDesktop ? '80%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
+            <Box flex={'none'} width={areaDesktop ? '80%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
               <TextDefault left={areaDesktop ? '85px' : '30px'} right={'30px'} family={'Caviar Dreams'} align={'center'} top={'30px'} color="#000" size={isMobile ? '18px' : '21px'}>
                 Os serviços da nossa equipe são especializados e personalizados para o seu caso.
                 Confira alguns dos serviços que disponibilizamos para assegurar o seu direito de
                 dirigir e preservar o seu patrimônio.
               </TextDefault>
 
-              <LogoImg left={areaDesktop ? '85px' : '30px'} right={areaDesktop ? '0px' : '30px'} top={'30px'} width={areaDesktop ? '80%' : '100%'} src={Ns} alt="Logo da Fleet Solutions" />
+              <LogoImg left={areaDesktop ? '85px' : '30px'} right={areaDesktop ? '0px' : '30px'} top={'30px'} width={areaDesktop ? '65.5%' : '100%'} src={Ns} alt="Logo da Fleet Solutions" />
 
             </Box>
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '36%' : '95%'} direction={'column'} justify={'center'} align={'center'}>
+          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} left={'85px'} direction={'column'} justify={'center'} align={'flex-start'}>
 
-            <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               MULTAS DE TRÂNSITO EM GERAL
             </SubmitButtonTwo>
 
-            <Box flex={'none'} width={'102%'} direction={'row'} justify={'center'} align={'center'}>
+            <Box flex={'none'} width={'91.5%'} direction={'row'} justify={'center'} align={'center'}>
               <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
                 DEFESA / RECURSOS DO BAFÔMETRO / LEI SECA
               </SubmitButtonTwo>
@@ -568,11 +570,11 @@ const App = () => {
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               EXCESSO DE PONTOS NA CNH
             </SubmitButtonTwo>
 
-            <Box flex={'none'} width={'102%'} direction={'row'}>
+            <Box flex={'none'} width={'91.5%'} direction={'row'}>
               <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
                 SUSPENSÃO DO DIREITO DE DIRIGIR
               </SubmitButtonTwo>
@@ -582,26 +584,26 @@ const App = () => {
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               MULTA POR NÃO INDICAR CONDUTOR (NIC)
             </SubmitButtonTwo>
 
-            <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               ULTRAPASSAGEM EM FAIXA CONTÍNUA AMARELA
             </SubmitButtonTwo>
 
-            <Box flex={'none'} width={'102%'} direction={'row'}>
+            <Box flex={'none'} width={'91.5%'} direction={'row'}>
               <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
                 CONSULTORIA PREVENTIVA E PERSONALIZADA PARA VOCÊ
               </SubmitButtonTwo>
 
 
-              <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+              <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
                 GESTÃO INTELIGENTE E PERSONALIZADA DE FROTAS
               </SubmitButtonTwo>
             </Box>
 
-            <SubmitButtonTwo height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
+            <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               SOLUÇÕES PARA EMPRESAS
             </SubmitButtonTwo>
 

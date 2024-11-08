@@ -320,7 +320,7 @@ export const SubmitButton = styled.button`
 `;
 
 export const SubmitButtonTwo = styled.button`
-  width:100%;
+  width: ${(props) => props.width || '100%'};
   padding: 5px;
   height: ${(props) => props.height || '85px'};
   border: none;
@@ -382,8 +382,8 @@ export const FleetSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  margin-top: 50px;
+  height: 100vh;
+  margin-top: 100px;
   text-align: center;
   min-height: 600px;
 
