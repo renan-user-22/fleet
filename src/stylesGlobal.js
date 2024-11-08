@@ -182,6 +182,7 @@ export const Box = styled.div`
   flex-direction: ${(props) => props.direction || 'row'};
   margin-bottom: ${(props) => props.bottomSpace || '0px'};
   margin-left: ${(props) => props.leftSpace || '0px'};
+  margin-right: ${(props) => props.rightSpace || '0px'};
   margin-top: ${(props) => props.topSpace || '0px'};
   border-radius: ${(props) => props.radius || '0px'};
   //padding: 10px; /* Adiciona espaçamento interno */
@@ -287,7 +288,7 @@ export const InputField = styled.input`
 
 // Select dropdown
 export const SelectField = styled.select`
-  width: 72%;
+  width:  ${(props) => props.width || '0px'};
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -298,7 +299,7 @@ export const SelectField = styled.select`
 
 // Submit Button
 export const SubmitButton = styled.button`
-  padding: 20px 20px;
+  padding: 10px 10px;
   width: ${(props) => props.width || '0px'};
   border: none;
   border-radius: 5px;
@@ -377,14 +378,12 @@ export const Footer = styled.footer`
 
 export const FleetSection = styled.section`
   display: flex;
-  width: 97%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
   margin-top: 50px;
-  //background-image: url(${backgroundImageBlack});
-  //background-size: cover;
   text-align: center;
   min-height: 600px;
 
