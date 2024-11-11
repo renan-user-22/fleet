@@ -285,7 +285,7 @@ const App = () => {
       <WelcomeTextWrapper width={areaDesktop ? '70%' : '85%'}>
 
         <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
-          <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '20px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
+          <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '21px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
           <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#000" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
         </Box>
 
@@ -323,7 +323,7 @@ const App = () => {
             )}
           </InputMask>
 
-          <TextDefault family={'Octosquares Italic'} bottom={'10px'} color="#000" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
+          <TextDefault family={'Octosquares Italic'} bottom={'10px'} color="#f5f5f5" size={isMobile ? '14px' : '19px'} left={"27px"}>Como podemos te ajudar?</TextDefault>
 
           <SelectField
             name="option"
@@ -361,11 +361,7 @@ const App = () => {
         </WelcomeTextWrapperLogo>
       }
 
-      {areaDesktop &&
-        <WelcomeTextWrapperLogoTwo>
-          <LogoImg src={LogoName} width={'60%'} />
-        </WelcomeTextWrapperLogoTwo>
-      }
+
 
       <Box color={'#f5f5f5'} flex={'1'} height={'100vh'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
@@ -378,7 +374,7 @@ const App = () => {
         <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
 
           <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={areaDesktop ? '85px' : '30px'} right={'30px'} color="#000" size={isMobile ? '18px' : '21px'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={areaDesktop ? '85px' : '30px'} right={'30px'} color="#000" size={'21px'}>
               Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
               para enfrentar esses desafios de forma eficiente e estratégica.
               Nossa equipe é especializada em desenvolver recursos
@@ -430,7 +426,7 @@ const App = () => {
           }
 
           <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={isMobile ? '18px' : '21px'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={'21px'}>
               Na Fleet Solutions, ajudamos sua empresa a economizar de forma
               inteligente.
               <p>
@@ -465,7 +461,7 @@ const App = () => {
         flex={'none'}
         direction={areaDesktop ? 'row' : 'column'}
         width={'100%'}
-        height={'100vh'}
+        height={areaDesktop ? '100vh' : 'auto'}
         justify={areaDesktop ? 'space-around' : 'center'}
         align={'center'}
       >
@@ -531,7 +527,7 @@ const App = () => {
 
 
 
-      <FleetSection id="services">
+      <FleetSection id="services" height={areaDesktop ? '100vh' : 'auto'}>
         <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'} width={'100%'}>
 
 
@@ -542,7 +538,7 @@ const App = () => {
             </Box>
 
             <Box flex={'none'} width={areaDesktop ? '80%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
-              <TextDefault left={areaDesktop ? '85px' : '30px'} right={'30px'} family={'Caviar Dreams'} align={'center'} top={'30px'} color="#000" size={isMobile ? '18px' : '21px'}>
+              <TextDefault left={areaDesktop ? '85px' : '30px'} right={'30px'} family={'Caviar Dreams'} align={'center'} top={'30px'} color="#000" size={'21px'}>
                 Os serviços da nossa equipe são especializados e personalizados para o seu caso.
                 Confira alguns dos serviços que disponibilizamos para assegurar o seu direito de
                 dirigir e preservar o seu patrimônio.
@@ -554,7 +550,7 @@ const App = () => {
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} left={'85px'} direction={'column'} justify={'center'} align={'flex-start'}>
+          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} left={'85px'} direction={'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'}>
 
             <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               MULTAS DE TRÂNSITO EM GERAL
@@ -670,4 +666,8 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; 
+
+
+// email: 
+// senha: 

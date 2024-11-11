@@ -382,7 +382,7 @@ export const FleetSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: ${(props) => props.height || '100vh'};
   margin-top: 100px;
   text-align: center;
   min-height: 600px;
