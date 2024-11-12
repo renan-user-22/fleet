@@ -66,7 +66,7 @@ const App = () => {
     option: '',
   });
 
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 968 });
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [logoFooter, setLogoFooter] = useState(false);
 
@@ -143,6 +143,7 @@ const App = () => {
       });
   };
 
+
   const handleScroll = () => {
     const isScrolled = window.scrollY > 50; // Muda a cor após 50px de rolagem
     setScrolled(isScrolled);
@@ -185,7 +186,16 @@ const App = () => {
     <Container>
 
       {/* Background com Parallax e Zoom */}
-      <BackgroundImage id="home" height={areaDesktop ? '100vh' : '90vh'} />
+      <BackgroundImage
+        id="home"
+        height={
+          areaDesktop
+            ? '100vh'  // Para desktop, sempre 100vh
+            : window.matchMedia("(orientation: landscape)").matches
+              ? '140vh' // Para dispositivos móveis na horizontal
+              : '100vh' // Para dispositivos móveis na vertical
+        }
+      />
 
       <Whats onClick={actionHelloWhatsApp}>
         <LogoImg left={'30px'} src={WhatsImg} alt="WhatsApp" />
@@ -242,6 +252,7 @@ const App = () => {
                   backgroundColor: 'white',
                 }}
                 role="presentation"
+
                 onClick={toggleDrawer}
                 onKeyDown={toggleDrawer}
               >
@@ -363,7 +374,7 @@ const App = () => {
 
 
 
-      <Box color={'#f5f5f5'} flex={'1'} height={'100vh'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+      <Box color={'#f5f5f5'} flex={'1'} height={areaDesktop ? '100vh' : 'auto'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} topSpace={'50px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
@@ -374,7 +385,7 @@ const App = () => {
         <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
 
           <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={areaDesktop ? '85px' : '30px'} right={'30px'} color="#000" size={'21px'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'} left={areaDesktop ? '85px' : '30px'} right={'30px'} color="#000" size={'21px'}>
               Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
               para enfrentar esses desafios de forma eficiente e estratégica.
               Nossa equipe é especializada em desenvolver recursos
@@ -409,7 +420,7 @@ const App = () => {
 
       </Box>
 
-      <Box height={'100vh'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+      <Box height={areaDesktop ? '100vh' : 'auto'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
           <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
@@ -426,7 +437,7 @@ const App = () => {
           }
 
           <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'}  left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={'21px'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'} left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={'21px'}>
               Na Fleet Solutions, ajudamos sua empresa a economizar de forma
               inteligente.
               <p>
@@ -512,7 +523,7 @@ const App = () => {
             family={'Caviar Dreams'}
             weight={'normal'}
             align={'justify'}
-            bottom={'30px'}    
+            bottom={'30px'}
             color="#000"
             size={'21px'}
           >
@@ -532,7 +543,7 @@ const App = () => {
 
 
           <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'} bottomSpace={'50px'}>
-            
+
             <Box topSpace={'5px'} flex={'none'} direction={'column'} width={areaDesktop ? '90%' : '100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
               <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>NOSSOS SERVIÇOS</TextDefault>
             </Box>
@@ -608,7 +619,7 @@ const App = () => {
         </Box>
       </FleetSection>
 
-      <HeroSection height={areaDesktop ? '800px' : '800px'} id="fleet">
+      <HeroSection height={areaDesktop ? '100vh' : 'auto'} id="fleet">
         <TextDefault align={'center'} right={'30px'} left={'30px'} top={'70px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>POR QUE A FLEET SOLUTIONS É A SUA PARCEIRA IDEAL?</TextDefault>
 
         <Box flex={'none'} width={'100%'} direction={areaDesktop ? 'row' : 'column'} justify={areaDesktop ? 'space-around' : 'center'} align={'center'}>
@@ -666,7 +677,7 @@ const App = () => {
   );
 };
 
-export default App; 
+export default App;
 
 
 // email: 

@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import backgroundImage from './img/ImageInitialllll.jpg';
 import backgroundImageWhite from './img/ImageInitiall.jpg';
-import backgroundImageBlack from './img/ImageInitiallll.jpg';
 
 // Animação de Zoom contínuo no fundo
 const zoomEffect = keyframes`
@@ -33,22 +32,21 @@ export const Container = styled.div`
   //z-index: -;
   //width: 100%;
 `;
+
+
 export const BackgroundImage = styled.div`
   background-image: url(${backgroundImage});
   background-size: cover;
-  background-attachment: fixed; /* Imagem fixa durante o scroll */
   background-position: center;
   height: ${(props) => props.height || '100vh'};
   width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: -1; /* Para garantir que fique atrás do conteúdo */
-  
-  /* Aplicando a animação de zoom */
-  //animation: ${zoomEffect} 15s infinite ease-in-out;
-  //will-change: transform; /* Para otimizar a performance */
+  z-index: -1;
 
-  /* Garante que o conteúdo acima e abaixo role enquanto a imagem permanece fixa */
+  /* Configuração padrão para desktop */
+  background-attachment: fixed;
+
   &::before {
     content: '';
     display: block;
@@ -57,8 +55,14 @@ export const BackgroundImage = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit; /* Mantém o background da imagem */
+    background: inherit;
     z-index: -1;
+  }
+
+  /* Ajuste para corrigir no Safari iOS */
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: scroll; /* Fallback para corrigir zoom no iOS */
+    background-size: cover; /* Garante consistência na aparência */
   }
 `;
 // Header
