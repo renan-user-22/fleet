@@ -555,7 +555,7 @@ const App = () => {
                 dirigir e preservar o seu patrimônio.
               </TextDefault>
 
-              <LogoImg left={areaDesktop ? '85px' : '30px'} right={areaDesktop ? '0px' : '30px'} top={'30px'} width={areaDesktop ? '65.5%' : '100%'} src={Ns} alt="Logo da Fleet Solutions" />
+              <LogoImg left={areaDesktop ? '85px' : '30px'} right={areaDesktop ? '0px' : '30px'} top={'30px'} width={areaDesktop ? '65.5%' : '85%'} src={Ns} alt="Logo da Fleet Solutions" />
 
             </Box>
           </Box>

@@ -225,7 +225,6 @@ export const LogoImg = styled.img`
   margin-left: ${(props) => props.left || '0px'};
   margin-right: ${(props) => props.right || '0px'};
   margin-top: ${(props) => props.top || '0px'};
-
 `;
 
 export const ServicesSection = styled.div`
