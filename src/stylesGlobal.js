@@ -388,7 +388,6 @@ export const FleetSection = styled.section`
   height: ${(props) => props.height || '100vh'};
   margin-top: 100px;
   text-align: center;
-  min-height: 600px;
 
   h2 {
     font-size: 2.5rem;

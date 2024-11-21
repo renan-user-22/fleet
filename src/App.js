@@ -188,6 +188,7 @@ const App = () => {
       {/* Background com Parallax e Zoom */}
       <BackgroundImage
         id="home"
+        loading="lazy"
         height={
           areaDesktop
             ? '100vh'  // Para desktop, sempre 100vh
@@ -382,10 +383,10 @@ const App = () => {
           </Box>
         </Box>
 
-        <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
+        <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
 
-          <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'} left={areaDesktop ? '85px' : '30px'} right={'30px'} color="#000" size={'21px'}>
+          <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
               Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
               para enfrentar esses desafios de forma eficiente e estratégica.
               Nossa equipe é especializada em desenvolver recursos
@@ -394,19 +395,17 @@ const App = () => {
               para alcançar a melhor solução.
             </TextDefault>
 
-            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'0px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'0px'} color="#000" size={isMobile ? '19px' : '29px'}>
               NÃO CORRA O RISCO DE PERDER SUA CNH,
             </TextDefault>
 
-            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'0px'} bottom={'30px'} left={'30px'} right={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'0px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
               SAIBA SEUS DIREITOS!
             </TextDefault>
 
             <Box flex={'1'} width={'100%'} direction={'column'} justify={'center'} align={'center'}>
               <SubmitButton width={areaDesktop ? '400px' : '70%'} onClick={actionHelloWhatsApp} >QUERO FALAR COM UM ESPECIALISTA</SubmitButton>
             </Box>
-
-
 
           </Box>
 
@@ -420,6 +419,8 @@ const App = () => {
 
       </Box>
 
+
+
       <Box height={areaDesktop ? '100vh' : 'auto'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
         <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
@@ -428,7 +429,7 @@ const App = () => {
           </Box>
         </Box>
 
-        <Box flex={'1'} direction={'row'} width={'100%'} justify={'flex-start'} align={'flex-start'}>
+        <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
 
           {areaDesktop &&
             <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
@@ -436,8 +437,8 @@ const App = () => {
             </Box>
           }
 
-          <Box direction={'column'} justify={'center'} align={'center'}>
-            <TextDefault family={'Caviar Dreams'} align={'justify'} left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={'21px'}>
+          <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
+            <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
               Na Fleet Solutions, ajudamos sua empresa a economizar de forma
               inteligente.
               <p>
@@ -450,7 +451,7 @@ const App = () => {
               </p>
             </TextDefault>
 
-            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} left={'30px'} right={areaDesktop ? '85px' : '30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
               ECONOMIZE E PROTEJA SUA EMPRESA AGORA!
             </TextDefault>
 
@@ -542,26 +543,26 @@ const App = () => {
         <Box direction={areaDesktop ? 'row' : 'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'} width={'100%'}>
 
 
-          <Box flex={'none'} width={areaDesktop ? '60%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'flex-start' : 'center'} bottomSpace={'50px'}>
+          <Box flex={'none'} width={areaDesktop ? '55%' : '100%'} direction={'column'} justify={'flex-start'} align={areaDesktop ? 'center' : 'center'} bottomSpace={'50px'}>
 
-            <Box topSpace={'5px'} flex={'none'} direction={'column'} width={areaDesktop ? '90%' : '100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
+            <Box topSpace={'5px'} flex={'none'} direction={'column'} width={areaDesktop ? '100%' : '100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #F26B2B, #EEBE2C)' }} justify={'center'} align={'center'}>
               <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>NOSSOS SERVIÇOS</TextDefault>
             </Box>
 
             <Box flex={'none'} width={areaDesktop ? '80%' : '100%'} direction={'column'} justify={'center'} align={'center'}>
-              <TextDefault left={areaDesktop ? '85px' : '30px'} right={'30px'} family={'Caviar Dreams'} align={'center'} top={'30px'} color="#000" size={'21px'}>
+              <TextDefault family={'Caviar Dreams'} align={'center'} top={'30px'} color="#000" size={'21px'}>
                 Os serviços da nossa equipe são especializados e personalizados para o seu caso.
                 Confira alguns dos serviços que disponibilizamos para assegurar o seu direito de
                 dirigir e preservar o seu patrimônio.
               </TextDefault>
 
-              <LogoImg left={areaDesktop ? '85px' : '30px'} right={areaDesktop ? '0px' : '30px'} top={'30px'} width={areaDesktop ? '65.5%' : '85%'} src={Ns} alt="Logo da Fleet Solutions" />
+              <LogoImg top={'30px'} width={areaDesktop ? '65%' : '85%'} src={Ns} alt="Logo da Fleet Solutions" />
 
             </Box>
           </Box>
 
 
-          <Box flex={'none'} width={areaDesktop ? '40%' : '95%'} left={'85px'} direction={'column'} justify={'center'} align={areaDesktop ? 'flex-start' : 'center'}>
+          <Box flex={'none'} width={areaDesktop ? '45%' : '100%'} left={'85px'} direction={'column'} justify={'center'} align={areaDesktop ? 'center' : 'center'}>
 
             <SubmitButtonTwo width={'90%'} height={areaDesktop ? '60px' : '85px'} onClick={(e) => actionHelloWhatsAppAssunt(e.target.innerText)}>
               MULTAS DE TRÂNSITO EM GERAL
