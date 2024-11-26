@@ -118,20 +118,20 @@ const Enviado = () => {
                 align={"center"}
                 width={"90%"}
                 //height={"100vh"}
-                topSpace={areaDesktop ? '10px' : '40px'}
+                topSpace={areaDesktop ? '70px' : '50px'}
             >
                 <MdOutlineCheckCircle color="#6ac831" size={areaDesktop ? '70px' : '50px'} />
 
-                <TextDefault weight={'bold'} align={'center'} bottom={"25px"} top={"15px"} size={areaDesktop ? '21px' : '19px'}>
+                <TextDefault weight={'bold'} align={'center'} bottom={"10px"} top={"15px"} size={areaDesktop ? '21px' : '19px'}>
                     Solicitação enviada com sucesso!
                 </TextDefault>
-                <TextDefault align={'center'} bottom={"10px"}>
+                <TextDefault align={'center'} bottom={"10px"} family={'Octosquares Extra Light'}>
                     Agradecemos o seu contato. Em breve, nossa equipe entrará em contato com você.
                 </TextDefault>
                 <TextDefault weight={'bold'} align={'center'} bottom={"10px"} size={areaDesktop ? '21px' : '19px'}>
                     Quer adiantar seu atendimento?
                 </TextDefault>
-                <TextDefault align={'center'} bottom={"20px"} >
+                <TextDefault align={'center'} bottom={"20px"} family={'Octosquares Extra Light'} >
                     Clique no botão abaixo e fale diretamente conosco pelo WhatsApp!
                 </TextDefault>
                 <SubmitButton width={"300px"} onClick={Whats}>
