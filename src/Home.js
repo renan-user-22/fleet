@@ -357,7 +357,7 @@ const App = () => {
 
                 <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
                     <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#FFFFFF" size={isMobile ? '21px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
-                    <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#FFFFFF" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
+                    <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#FFFFFF" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA!</TextDefault>
                 </Box>
 
                 <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
@@ -419,7 +419,7 @@ const App = () => {
                     </SelectField>
 
                     <SubmitButton left={'30px'} width={areaDesktop ? '400px' : '75%'} onClick={(e) => sendEmail(e)}>
-                        <TextDefault align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FAÇA UMA ANALIZE GRATUITA</TextDefault>
+                        <TextDefault align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>SOLICITAR ANÁLISE GRATUITA</TextDefault>
                     </SubmitButton>
 
                 </Box>
@@ -433,7 +433,7 @@ const App = () => {
             }
 
             <Box topSpace={'50px'} bottomSpace={'50px'} flex={'none'} direction={'column'} width={'100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #000000, #CCCCCC)' }} justify={'center'} align={'center'}>
-                <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>QUEM É A FLEET SOLUTIONS</TextDefault>
+                <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>QUEM É A FLEET SOLUTIONS?</TextDefault>
             </Box>
 
             <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
