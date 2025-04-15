@@ -95,60 +95,60 @@ const App = () => {
 
     const sendEmail = (e) => {
         e.preventDefault(); // Evita o envio padrão do formulário
-      
+
         const { name, email, phone, option } = formData;
-      
+
         // Verifica se todos os campos estão preenchidos
         if (!name || !email || !phone || option === "vazio") {
-          Swal.fire({
-            icon: "warning",
-            title: "Campos obrigatórios",
-            text: "Por favor, preencha todos os campos antes de enviar.",
-          });
-          return;
-        }
-      
-        emailjs
-          .send(
-            "service_nj5pqhb",
-            "template_cf31bq9",
-            {
-              name: formData.name,
-              email: formData.email,
-              phone: formData.phone,
-              option: formData.option,
-            },
-            "jbHWT76pHcmHCdC1s"
-          )
-          .then((response) => {
-            console.log(
-              "Solicitação enviada com sucesso! Entraremos em contato em breve.",
-              response.status,
-              response.text
-            );
-      
-            // Limpa os campos do formulário
-            setFormData({
-              name: "",
-              email: "",
-              phone: "",
-              option: "vazio",
-            });
-      
-            // Redireciona para a página "Enviado"
-            navigate("/enviado");
-          })
-          .catch((error) => {
-            console.error("Falha ao enviar solicitação:", error);
-      
-            // Exibe uma mensagem de erro usando SweetAlert2
             Swal.fire({
-              icon: "error",
-              title: "Erro",
-              text: "Erro ao enviar o solicitação. Tente novamente mais tarde.",
+                icon: "warning",
+                title: "Campos obrigatórios",
+                text: "Por favor, preencha todos os campos antes de enviar.",
             });
-          });
-      };
+            return;
+        }
+
+        emailjs
+            .send(
+                "service_nj5pqhb",
+                "template_cf31bq9",
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    option: formData.option,
+                },
+                "jbHWT76pHcmHCdC1s"
+            )
+            .then((response) => {
+                console.log(
+                    "Solicitação enviada com sucesso! Entraremos em contato em breve.",
+                    response.status,
+                    response.text
+                );
+
+                // Limpa os campos do formulário
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    option: "vazio",
+                });
+
+                // Redireciona para a página "Enviado"
+                navigate("/enviado");
+            })
+            .catch((error) => {
+                console.error("Falha ao enviar solicitação:", error);
+
+                // Exibe uma mensagem de erro usando SweetAlert2
+                Swal.fire({
+                    icon: "error",
+                    title: "Erro",
+                    text: "Erro ao enviar o solicitação. Tente novamente mais tarde.",
+                });
+            });
+    };
 
 
     const sendEmaillll = (e) => {
@@ -356,8 +356,8 @@ const App = () => {
             <WelcomeTextWrapper width={areaDesktop ? '70%' : '85%'}>
 
                 <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
-                    <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#000" size={isMobile ? '21px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
-                    <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#000" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
+                    <TextDefault family={'Nebula'} bottom={'10px'} right={'10px'} color="#FFFFFF" size={isMobile ? '21px' : '33px'} left="30px">Precisando de assistência especializada?</TextDefault>
+                    <TextDefault weight={'normal'} family={'Octosquares Extra Light'} bottom={'20px'} right={'10px'} color="#FFFFFF" size={isMobile ? '14px' : '17px'} left={"30px"}>PREENCHA O FORMULÁRIO ABAIXO E FALE COM O ESPECIALISTA AGORA!</TextDefault>
                 </Box>
 
                 <Box direction={'column'} width={areaDesktop ? '90%' : '100%'} justify={'center'} align={'flex-start'}>
@@ -419,7 +419,7 @@ const App = () => {
                     </SelectField>
 
                     <SubmitButton left={'30px'} width={areaDesktop ? '400px' : '75%'} onClick={(e) => sendEmail(e)}>
-                        <TextDefault align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FALAR COM UM ESPECIALISTA</TextDefault>
+                        <TextDefault align={'center'} family={'Octosquares Italic'} color="#f5f5f5" size={isMobile ? '15px' : '15px'}>FAÇA UMA ANALIZE GRATUITA</TextDefault>
                     </SubmitButton>
 
                 </Box>
@@ -432,94 +432,134 @@ const App = () => {
                 </WelcomeTextWrapperLogo>
             }
 
+            <Box topSpace={'50px'} bottomSpace={'50px'} flex={'none'} direction={'column'} width={'100%'} height={'130px'} style={{ background: 'linear-gradient(to right, #000000, #CCCCCC)' }} justify={'center'} align={'center'}>
+                <TextDefault family={'Octosquares Bold'} align={'center'} bottom={'30px'} top={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>QUEM É A FLEET SOLUTIONS</TextDefault>
+            </Box>
 
+            <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
 
-            <Box color={'#f5f5f5'} flex={'1'} height={areaDesktop ? '100vh' : 'auto'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+                <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
+                    <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
+                        <p>
+                            A Fleet Solutions nasceu da vivência no setor de transportes, unindo
+                            o olhar técnico de quem já esteve no campo à solidez jurídica de
+                            profissionais especializados em Direito de Trânsito, Trabalhista e Empresarial.
+                        </p>
 
-                <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} topSpace={'50px'} bottomSpace={'50px'}>
-                    <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
-                        <TextDefault family={'Octosquares Bold'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={areaDesktop ? '85px' : '30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>FOI MULTADO? </TextDefault>
-                    </Box>
-                </Box>
+                        <p>
+                            Somos mais do que uma empresa de recursos contra multas: somos especialistas
+                            em anulação de multas de trânsito, elaboração de defesas técnicas personalizadas,
+                            recursos administrativos eficazes e consultoria jurídica estratégica voltada
+                            especialmente para empresas com frotas próprias e motoristas profissionais.
+                        </p>
 
-                <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
-
-                    <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
-                        <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
-                            Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
-                            para enfrentar esses desafios de forma eficiente e estratégica.
-                            Nossa equipe é especializada em desenvolver recursos
-                            totalmente personalizados para cada etapa do processo,
-                            assegurando que cada detalhe seja cuidadosamente considerado
-                            para alcançar a melhor solução.
-                        </TextDefault>
-
-                        <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'0px'} color="#000" size={isMobile ? '19px' : '29px'}>
-                            NÃO CORRA O RISCO DE PERDER SUA CNH,
-                        </TextDefault>
-
-                        <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'0px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
-                            SAIBA SEUS DIREITOS!
-                        </TextDefault>
-
-                        <Box flex={'1'} width={'100%'} direction={'column'} justify={'center'} align={'center'}>
-                            <SubmitButton width={areaDesktop ? '400px' : '70%'} onClick={actionHelloWhatsApp} >QUERO FALAR COM UM ESPECIALISTA</SubmitButton>
-                        </Box>
-
-                    </Box>
-
-                    {areaDesktop &&
-                        <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
-                            <LogoImg src={FoiMultado} width={'100%'} />
-                        </Box>
-                    }
+                        <p>
+                            Nosso diferencial está na capacidade de aliar experiência prática,
+                            profundo conhecimento técnico e atendimento humanizado, criando
+                            soluções sob medida para cada desafio no trânsito — seja individual
+                            ou corporativo.
+                        </p>
+                    </TextDefault>
 
                 </Box>
+
+                {areaDesktop &&
+                    <Box flex={'none'} width={'40%'} direction={'column'} justify={'flex-start'} align={'flex-start'} bottomSpace={'50px'} >
+                        <LogoImg src={ImgFrotas} width={'100%'} top={'30px'} />
+                    </Box>
+                }
 
             </Box>
 
 
 
-            <Box height={areaDesktop ? '100vh' : 'auto'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+            {/* 
+                <Box color={'#f5f5f5'} flex={'1'} height={areaDesktop ? '100vh' : 'auto'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
 
-                <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
-                    <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
-                        <TextDefault family={'Octosquares Bold'} right={areaDesktop ? '85px' : '30px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>EVITE PERDER DINHEIRO.</TextDefault>
-                    </Box>
-                </Box>
-
-                <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
-
-                    {areaDesktop &&
-                        <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
-                            <LogoImg src={ImgFrotas} width={'100%'} />
+                    <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} topSpace={'50px'} bottomSpace={'50px'}>
+                        <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #000, #f5f5f5)' }} justify={'center'} align={'flex-start'}>
+                            <TextDefault family={'Octosquares Bold'} right={'20px'} align={'right'} bottom={'30px'} top={'30px'} left={areaDesktop ? '85px' : '30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>FOI MULTADO? </TextDefault>
                         </Box>
-                    }
+                    </Box>
 
-                    <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
-                        <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
-                            Na Fleet Solutions, ajudamos sua empresa a economizar de forma
-                            inteligente.
-                            <p>
-                                Nossa gestão personalizada de frotas e motoristas é projetada
-                                para reduzir multas, otimizar processos e garantir a segurança no
-                                trânsito, evitando prejuízos com infrações e acidentes. Além
-                                disso, cuidamos da imagem da sua empresa nas ruas, buscando
-                                que seus motoristas atuem com responsabilidade e
-                                profissionalismo.
-                            </p>
-                        </TextDefault>
+                    <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
 
-                        <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
-                            ECONOMIZE E PROTEJA SUA EMPRESA AGORA!
-                        </TextDefault>
+                        <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
+                            <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
+                                Não se preocupe! Na Fleet Solutions, oferecemos o suporte ideal
+                                para enfrentar esses desafios de forma eficiente e estratégica.
+                                Nossa equipe é especializada em desenvolver recursos
+                                totalmente personalizados para cada etapa do processo,
+                                assegurando que cada detalhe seja cuidadosamente considerado
+                                para alcançar a melhor solução.
+                            </TextDefault>
 
-                        <SubmitButton width={areaDesktop ? '400px' : '70%'} onClick={actionHelloWhatsApp} >FALAR COM UM ESPECIALISTA EM FROTAS</SubmitButton>
+                            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'100px'} bottom={'0px'} color="#000" size={isMobile ? '19px' : '29px'}>
+                                NÃO CORRA O RISCO DE PERDER SUA CNH,
+                            </TextDefault>
+
+                            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'0px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+                                SAIBA SEUS DIREITOS!
+                            </TextDefault>
+
+                            <Box flex={'1'} width={'100%'} direction={'column'} justify={'center'} align={'center'}>
+                                <SubmitButton width={areaDesktop ? '400px' : '70%'} onClick={actionHelloWhatsApp} >QUERO FALAR COM UM ESPECIALISTA</SubmitButton>
+                            </Box>
+
+                        </Box>
+
+                        {areaDesktop &&
+                            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
+                                <LogoImg src={FoiMultado} width={'100%'} />
+                            </Box>
+                        }
+
                     </Box>
 
                 </Box>
 
-            </Box>
+                <Box height={areaDesktop ? '100vh' : 'auto'} color={'#f5f5f5'} flex={'1'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-start'} >
+
+                    <Box flex={'none'} direction={'column'} width={'100%'} justify={'flex-start'} align={'flex-end'} topSpace={'30px'} bottomSpace={'50px'}>
+                        <Box flex={'none'} direction={'column'} width={areaDesktop ? '70%' : '100%'} height={'100px'} style={{ background: 'linear-gradient(to right, #f5f5f5, #000)' }} justify={'center'} align={'flex-end'}>
+                            <TextDefault family={'Octosquares Bold'} right={areaDesktop ? '85px' : '30px'} align={'right'} bottom={'30px'} top={'30px'} left={'30px'} color="#f5f5f5" size={isMobile ? '22px' : '45px'}>EVITE PERDER DINHEIRO.</TextDefault>
+                        </Box>
+                    </Box>
+
+                    <Box flex={'1'} direction={'row'} width={'100%'} justify={'space-around'} align={'flex-start'}>
+
+                        {areaDesktop &&
+                            <Box flex={'none'} width={'40%'} direction={'column'} justify={'center'} align={'center'} bottomSpace={'50px'}>
+                                <LogoImg src={ImgFrotas} width={'100%'} />
+                            </Box>
+                        }
+
+                        <Box direction={'column'} justify={'center'} align={'center'} flex={areaDesktop ? '0.8' : '0.9'}>
+                            <TextDefault family={'Caviar Dreams'} align={'justify'} color="#000" size={'21px'}>
+                                Na Fleet Solutions, ajudamos sua empresa a economizar de forma
+                                inteligente.
+                                <p>
+                                    Nossa gestão personalizada de frotas e motoristas é projetada
+                                    para reduzir multas, otimizar processos e garantir a segurança no
+                                    trânsito, evitando prejuízos com infrações e acidentes. Além
+                                    disso, cuidamos da imagem da sua empresa nas ruas, buscando
+                                    que seus motoristas atuem com responsabilidade e
+                                    profissionalismo.
+                                </p>
+                            </TextDefault>
+
+                            <TextDefault family={'Octosquares Italic'} weight={'bold'} align={'center'} top={'70px'} bottom={'30px'} color="#000" size={isMobile ? '19px' : '29px'}>
+                                ECONOMIZE E PROTEJA SUA EMPRESA AGORA!
+                            </TextDefault>
+
+                            <SubmitButton width={areaDesktop ? '400px' : '70%'} onClick={actionHelloWhatsApp} >FALAR COM UM ESPECIALISTA EM FROTAS</SubmitButton>
+                        </Box>
+
+                    </Box>
+
+                </Box>
+            */}
+
 
 
 
@@ -532,7 +572,7 @@ const App = () => {
                 flex={'none'}
                 direction={areaDesktop ? 'row' : 'column'}
                 width={'100%'}
-                height={areaDesktop ? '100vh' : 'auto'}
+                height={areaDesktop ? '120vh' : 'auto'}
                 justify={areaDesktop ? 'space-around' : 'center'}
                 align={'center'}
             >
@@ -542,7 +582,7 @@ const App = () => {
                     width={areaDesktop ? '40%' : '90%'}
                     direction={'column'}
                     justify={'flex-start'}
-                    align={'center'}
+                    align={'flex-start'}
                 >
                     <LogoImg
                         src={ImgMotoristas}
@@ -554,15 +594,21 @@ const App = () => {
                         family={'Caviar Dreams'}
                         weight={'normal'}
                         align={'justify'}
-                        bottom={'30px'}
+                        bottom={'50px'}
                         color="#000"
                         size={'21px'}
                     >
-                        Nossa atuação para motoristas é detalhada e estratégica. Analisamos cada infração de forma
-                        individual, desenvolvendo defesas totalmente personalizadas - sem utilizar modelos prontos.
-                        Buscamos a melhor estratégia de defesa, oferecendo suporte completo para que você
-                        possa enfrentar e resolver questões complexas no trânsito, mantendo seus direitos e sua
-                        tranquilidade.
+                        Nossa atuação para motoristas é técnica, personalizada e com foco em resultados.
+                        Cada caso é tratado com atenção exclusiva: analisamos a infração a fundo, avaliando
+                        os detalhes para elaborar uma defesa de multas de trânsito eficaz e sob medida — sem
+                        uso de modelos prontos ou defesas genéricas.
+                        <p>
+                            Se você precisa de um recurso contra infração de trânsito, nosso foco é desenvolver
+                            a melhor estratégia de defesa possível, garantindo que seus direitos sejam
+                            preservados e que você tenha o suporte necessário para manter a regularidade da sua
+                            CNH e a sua tranquilidade no trânsito.
+                        </p>
+
                     </TextDefault>
                 </Box>
 
@@ -570,8 +616,8 @@ const App = () => {
                     flex={'none'}
                     width={areaDesktop ? '40%' : '90%'}
                     direction={'column'}
-                    justify={'center'}
-                    align={'center'}
+                    justify={'flex-start'}
+                    align={'flex-start'}
                 >
                     <LogoImg
                         src={ImgEmpresas}
@@ -587,10 +633,19 @@ const App = () => {
                         color="#000"
                         size={'21px'}
                     >
-                        Na Fleet Solutions, oferecemos soluções completas e personalizadas para empresas, como o monitoramento inteligente
-                        de placas, controle e gestão de multas e motoristas. Adaptamos nossos serviços para atender a qualquer demanda
-                        com eficiência, garantindo segurança e econômica. Nosso foco é otimizar processos, reduzir custos e fortalecer a reputação
-                        da sua empresa nas ruas.
+                        Na Fleet Solutions, entregamos soluções completas e personalizadas para
+                        empresas com frotas próprias. Nossos serviços incluem monitoramento
+                        inteligente de placas, controle e gestão de multas e motoristas,
+                        sempre com foco em eficiência e resultado.
+                        <p>
+                            Se sua empresa precisa de suporte para recorrer de infração de trânsito,
+                            a Fleet Solutions está pronta para atuar com estratégia e precisão.
+                            Nossa equipe técnica analisa cada caso individualmente, desenvolvendo
+                            soluções eficazes que reduzem custos, aumentam a segurança e preservam
+                            a imagem da sua empresa nas ruas, evitando prejuízos desnecessários e
+                            protegendo toda a sua operação.
+                        </p>
+
                     </TextDefault>
                 </Box>
 
@@ -713,7 +768,7 @@ const App = () => {
 
                 <div className="social-icons">
 
-                    <LinkMenu href="https://www.instagram.com/_fleet.solutions/" >
+                    <LinkMenu href="https://www.instagram.com/fleetsolutions_/#" >
                         <FaInstagram size={24} /> {/* Ícone do Instagram */}
                     </LinkMenu>
 
@@ -731,7 +786,7 @@ const App = () => {
 
                 </div>
 
-                <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" >© 2024 Fleet Solutions. Todos os direitos reservados.</TextDefault>
+                <TextDefault align={'center'} top={'5px'} color="#FFFFFF" size="13px" ><p>© {new Date().getFullYear()} Fleet Solutions. Todos os direitos reservados.</p></TextDefault>
             </Footer>
         </Container>
     );

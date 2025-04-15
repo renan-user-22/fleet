@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import backgroundImage from './img/ImageInitialllll.jpg';
+import backgroundImage from './img/ImageInitiallllll.jpg';
 import backgroundImageWhite from './img/ImageInitiall.jpg';
 
 // Animação de Zoom contínuo no fundo
